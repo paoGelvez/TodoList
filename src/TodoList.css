@@ -1,0 +1,10 @@
+.TodoList{
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    background-color: #fdcae1;
+
+}
