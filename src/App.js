@@ -4,7 +4,9 @@ import TodoCounter from './TodoCounter.js'
 import TodoSearch from './TodoSearch.js'
 import TodoList from './TodoList.js'
 import TodoItem from './TodoItem.js'
-// import './App.css';
+import CreateTodoButton from './CreateTodoButton.js';
+import './App.css';
+
 
 
 //comportamiento de mi aplicación
@@ -23,9 +25,10 @@ const todos = [
   {text : 'tomar curso de mecanografia', completed : false},
   {text: 'pintar', completed:false},
 ];
-function App(props) {
+function App (props) {
   return (
     <React.Fragment>
+      
       <TodoCounter/>
 
       <TodoSearch/>
@@ -37,9 +40,11 @@ function App(props) {
         ))}
       </TodoList>
 
-      {/*<CreateTodoButton/> */}
+      <CreateTodoButton/>
 
-      <button>+</button> 
+      <button className='button'>+</button> 
+
+      
 
     </React.Fragment>
   );

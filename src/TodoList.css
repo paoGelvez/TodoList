@@ -1,10 +1,16 @@
 .TodoList{
-    font-size: 15px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 50%;
-    background-color: #fdcae1;
+    background: #F9FBFC;
+    border-radius: 2px;
+    border: 2px solid #C997C6;
+    width: 33vw;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #1E1E1F;
+    box-shadow: 0px 5px 50px rgb(32 35 41 / 25%);
+    position: relative;
+    top: 30%;
+    left: 60%;
 
 }
