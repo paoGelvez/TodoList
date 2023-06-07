@@ -1,10 +1,9 @@
 import React from 'react';
-import './TodoCounter.css';
 
 
 function TodoCounter(){
     return (
-        <h2 className='TodoCounter'> Journaling</h2>
+        <h2 className='text-5xl font anton font-bold tracking-widest'> Journaling</h2>
     );
 }
 

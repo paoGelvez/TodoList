@@ -1,24 +1,12 @@
-import React from 'react';
-import './TodoList.css';
+const TodoList =({children}) =>{
+  return(
+    <div className="flex flex-col mt-7 rounded-lg overflow-hidden shadow-2xl">
+     {children}
+  
+    </div>
 
-const todos = [
-    {text: 'cortar cebolla', completed : false},
-    {text : 'tomar curso de mecanografia', completed : false},
-    {text: 'pintar', completed:false},
-];
-
-function TodoList(props){
-    return (
-        
-        <section className='TodoList'>
-            <ul>
-                {props.children}
-
-            </ul>
-        </section>
-        
-    );
+  )
+  
 }
 
-
-export default  TodoList;
+export default TodoList;

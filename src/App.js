@@ -1,9 +1,9 @@
 import logo from './logoMarca2.png';
 import React from 'react';
-import TodoCounter from './TodoCounter.js'
-import TodoSearch from './TodoSearch.js'
-import TodoList from './TodoList.js'
-import TodoItem from './TodoItem.js'
+import TodoCounter from './TodoTitle.js';
+import TodoSearch from './TodoSearch.js';
+import TodoList from './TodoList';
+import TodoItem from './TodoItem.js';
 import CreateTodoButton from './CreateTodoButton.js';
 import './App.css';
 
@@ -20,33 +20,27 @@ import './App.css';
 
 // React.Fragment : ayuda a agrupar los elementos sin introducir elementos extra a nivel del dom es como una etiqueta invisible que nos permite subir todo sin que jsx nos mand error 
 
-const todos = [
-  {text: 'cortar cebolla', completed : false},
-  {text : 'tomar curso de mecanografia', completed : false},
-  {text: 'pintar', completed:false},
-];
-function App (props) {
+
+function App () {
   return (
-    <React.Fragment>
+    <div className=' min-h-screen h-full flex items-center justify-center py-20 px-5'>
+      <div className='container flex
+       flex-col max-w-xl'>
       
-      <TodoCounter/>
+        <TodoCounter/>
 
-      <TodoSearch/>
-      
+        <CreateTodoButton/>
+        
+        {/* <TodoSearch/> */}
+        
 
-      <TodoList>
-        {todos.map(todo=>(
-          <TodoItem key={todo.text} text={todo.text}/>
-        ))}
-      </TodoList>
+        <TodoList>
+          <TodoItem/>
 
-      <CreateTodoButton/>
+        </TodoList>
+      </div>
 
-      <button className='button'>+</button> 
-
-      
-
-    </React.Fragment>
+    </div>
   );
 }
 
